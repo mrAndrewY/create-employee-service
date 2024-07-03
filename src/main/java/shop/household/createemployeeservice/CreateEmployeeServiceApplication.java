@@ -2,13 +2,7 @@ package shop.household.createemployeeservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.context.annotation.ComponentScan;
-import shop.household.createemployeeservice.error.ServiceException;
-import shop.household.createemployeeservice.mapper.ResponseMapper;
-import shop.household.createemployeeservice.mapper.ResponseMapperImpl;
-import shop.household.createemployeeservice.model.Employee;
-import shop.household.createemployeeservice.service.EmployeeService;
 
 @SpringBootApplication
 @ComponentScan("shop.household")

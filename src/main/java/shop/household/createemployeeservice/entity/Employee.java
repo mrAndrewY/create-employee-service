@@ -1,12 +1,11 @@
-package shop.household.createemployeeservice.model;
+package shop.household.createemployeeservice.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
-import shop.household.EmployeeDto;
 
 @Data
 @AllArgsConstructor
-@Builder//(setterPrefix = "with")
+@Builder
 @Entity
 @Table(schema="shop", name="employee")
 public class Employee {

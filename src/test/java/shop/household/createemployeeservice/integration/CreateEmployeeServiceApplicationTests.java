@@ -8,7 +8,7 @@ import shop.household.createemployeeservice.IT;
 class CreateEmployeeServiceApplicationTests {
 
 	@Test
-	void contextLoads() {
+	void testController() {
 	}
 
 }

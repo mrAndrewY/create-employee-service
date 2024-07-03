@@ -7,9 +7,9 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
-import shop.household.createemployeeservice.model.Employee;
+import shop.household.createemployeeservice.entity.Employee;
 import shop.household.createemployeeservice.repository.EmployeeRepository;
-import shop.household.createemployeeservice.service.EmployeeService;
+import shop.household.createemployeeservice.impl.EmployeeServiceImpl;
 
 import java.util.Optional;
 
@@ -18,13 +18,13 @@ import static org.junit.jupiter.api.Assertions.*;
 @ExtendWith(MockitoExtension.class)
 public class EmployeeServiceTest {
 
-    private static final Long EMPLOYEE_ID = 1L;
+    public static final Long EMPLOYEE_ID = 1L;
 
     @Mock
     private EmployeeRepository repository;
 
     @InjectMocks
-    private EmployeeService employeeService;
+    private EmployeeServiceImpl employeeService;
 
     @Test
     void save(){

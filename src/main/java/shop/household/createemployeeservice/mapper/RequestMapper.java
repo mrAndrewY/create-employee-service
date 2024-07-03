@@ -3,9 +3,8 @@ package shop.household.createemployeeservice.mapper;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.springframework.stereotype.Component;
-import shop.household.EmployeeCreateRequestDto;
-import shop.household.EmployeeDto;
-import shop.household.createemployeeservice.model.Employee;
+import shop.household.api.employee.EmployeeCreateRequestDto;
+import shop.household.createemployeeservice.entity.Employee;
 
 @Mapper(componentModel = "spring")
 @Component
