@@ -11,11 +11,11 @@ import shop.household.createemployeeservice.entity.Employee;
 @Component
 public interface ResponseMapper  {
 
-    @Mapping(expression = "java(String.valueOf(employee.getId()))", target = "employeeId")
+    @Mapping(expression = "java(String.valueOf(employee.getId()))", target = "id")
     @Mapping(source = "name", target = "name")
     @Mapping(source = "lastName", target = "lastname", nullValueCheckStrategy = NullValueCheckStrategy.ALWAYS)
     @Mapping(source = "email", target = "email" , nullValueCheckStrategy = NullValueCheckStrategy.ALWAYS)
-    @Mapping(source = "telephone", target = "telephone" , nullValueCheckStrategy = NullValueCheckStrategy.ALWAYS)
+    @Mapping(source = "telephone", target = "phone" , nullValueCheckStrategy = NullValueCheckStrategy.ALWAYS)
     EmployeeDto mapEmployee(Employee employee);
 
 

@@ -13,6 +13,6 @@ public interface RequestMapper {
     @Mapping(source = "name", target = "name")
     @Mapping(source = "lastname", target = "lastName")
     @Mapping(source = "email", target = "email")
-    @Mapping(source = "telephone", target = "telephone")
+    @Mapping(source = "phone", target = "telephone")
     Employee mapDtoToModelEmployee(EmployeeCreateRequestDto employeeDto);
 }
