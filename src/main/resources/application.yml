@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: create-employee-service
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/houshold_appliances
+    username: andrew
+    password: hello
+endpoint: /v1/create/employee
